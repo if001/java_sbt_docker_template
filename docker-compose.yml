@@ -1,0 +1,14 @@
+version: '2'
+services:
+  play:
+    build: .
+    #image: play:centos7
+    image: play:ubuntu16.10
+    container_name: "java_sbt_docker_template"
+    # ports:
+    #   - "9909:9000"
+    #volumes:
+    #  - /Users/issei/prog/bbs_dockerPlay/bbsSample:/home/workspace
+    #command : activator run
+    command : bash
+    tty : true
